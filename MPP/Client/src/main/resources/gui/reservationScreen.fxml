@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="windowPane" prefHeight="298.0" prefWidth="417.0" stylesheets="/css/reservationScreen.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationScreenController">
+   <children>
+      <Label layoutX="73.0" layoutY="139.0" prefHeight="32.0" prefWidth="91.0" text="Client name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="clientNameTxt" layoutX="184.0" layoutY="139.0" prefHeight="32.0" prefWidth="149.0" promptText="Insert client name..." />
+      <Button fx:id="createReservationBtn" onAction="#handleCreateReservation" layoutX="152.0" layoutY="216.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" text="Reserve seat" />
+      <Label fx:id="seatNumberLabel" layoutX="142.0" layoutY="35.0" prefHeight="32.0" prefWidth="133.0" text="Seat number: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+rootProject.name = 'lab5'
+include 'Services'
+include 'Model'
+include 'Persistence'
+include 'Networking'
+include 'Server'
+include 'Client'
+

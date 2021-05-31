@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="jdbcConfiguration" location="classpath:server.properties"/>
+
+    <bean id="userRepo" class="persistence.repository.UserRepositoryORM">
+    </bean>
+    <bean id="routeRepo" class="persistence.repository.RouteRepository">
+        <constructor-arg>
+            <props>
+                <prop key="jdbcConfiguration"></prop>
+            </props>
+        </constructor-arg>
+    </bean>
+    <bean id="reservationRepo" class="persistence.repository.ReservationRepository">
+        <constructor-arg>
+            <props>
+                <prop key="jdbcConfiguration"></prop>
+            </props>
+        </constructor-arg>
+    </bean>
+
+    <bean id="Service" class="server.ServicesImpl">
+        <constructor-arg ref="userRepo"/>
+        <constructor-arg ref="routeRepo"/>
+        <constructor-arg ref="reservationRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+
+        <property name="serviceName" value="TC"/>
+        <property name="service" ref="Service"/>
+        <property name="serviceInterface" value="services.IService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+</beans>
