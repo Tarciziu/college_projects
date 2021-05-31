@@ -1,0 +1,8 @@
+.image-view{
+    -fx-background-radius: 5em;
+}
+.label{
+    -fx-text-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 32;
+}

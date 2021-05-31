@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+}
+
+group 'org.social_network'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0', 'org.controlsfx:controlsfx:8.40.14'
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.18'
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+    implementation 'com.itextpdf:itextg:5.5.9'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.controls' , 'javafx.fxml', 'javafx.swing']
+}
+mainClassName='socialnetwork.MainApp'

@@ -1,0 +1,19 @@
+#loginAnchorPane{
+    -fx-background-color: #1e1e1f;
+}
+
+.button{
+    -fx-background-color: #b5104a;
+    -fx-font-size: 15;
+    -fx-background-radius: 5em;
+}
+
+#emailField{
+    -fx-font-size: 13;
+    -fx-text-fill: darkblue;
+}
+#labelInfo{
+    -fx-text-fill: lightgreen;
+    -fx-font-size: 11;
+    -fx-text-alignment: center;
+}

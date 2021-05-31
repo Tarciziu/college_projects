@@ -1,0 +1,51 @@
+.list-view{
+    -fx-background-color: #1e1e1f;
+}
+.list-view .list-cell,
+.list-view .list-cell:filled,
+.list-view .list-cell:selected,
+.list-view .list-cell:focused,
+.list-view .list-cell:hover {
+    -fx-background-color: transparent;
+    -fx-effect: null;
+}
+.list-view.list-cell{
+    -fx-background-color: #1e1e1f;
+}
+
+.label{
+    -fx-background-color: #1e1e1f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+.text-field{
+    -fx-background-color: #666563;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-image:url('https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/24/Search-icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+}
+
+.button{
+    -fx-background-radius: 5em;
+    -fx-background-color: #666563;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#friendRequestsButton{
+    -fx-background-image:url('https://icons.iconarchive.com/icons/hopstarter/soft-scraps/24/User-Administrator-Blue-icon.png');
+}
+
+#notificationsButton{
+    -fx-background-image:url('https://icons.iconarchive.com/icons/icons8/windows-8/24/Holidays-Bell-icon.png');
+}
+
+.popover{
+    -fx-position-shape: fixed;
+    -fx-background-color: #1e1e1f;
+}

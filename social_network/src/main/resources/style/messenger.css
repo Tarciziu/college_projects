@@ -1,0 +1,51 @@
+#titleLabel{
+    -fx-text-fill: white;
+}
+.label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-radius: 5em;
+    -fx-label-padding: 5 10 5 10;
+}
+#titleLabel{
+    -fx-background-color: transparent;
+}
+.list-view,
+.list-view .list-cell,
+.list-view .list-cell:filled,
+.list-view .list-cell:selected,
+.list-view .list-cell:focused,
+.list-view .list-cell:hover {
+    -fx-background-color: transparent;
+    -fx-effect: null;
+    -fx-border-color: transparent;
+}
+
+#typeField{
+    -fx-background-color: #3c3c3d;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 0.05em;
+}
+
+#leftVBox{
+    -fx-border-color: white;
+    -fx-border-width: 0.05em;
+}
+
+#rightVBox{
+    -fx-border-color: white;
+    -fx-border-width: 0.05em;
+}
+
+#newMessageButton{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image:url('https://icons.iconarchive.com/icons/jonas-rask/danish-royalty-free/32/new-mail-icon.png');
+}
+
+#topHBox{
+    -fx-border-color: white;
+    -fx-border-width: 0.05em;
+}

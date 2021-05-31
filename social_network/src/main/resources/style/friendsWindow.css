@@ -1,0 +1,22 @@
+.button{
+    -fx-background-color: #1e1e1f;
+    -fx-background-radius: 0 !important;
+    -fx-pref-width: 116;
+    -fx-pref-height: 122;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #b5104a;
+    -fx-background-radius: 0 !important;
+    -fx-text-fill: black;
+}
+.button:pressed{
+    -fx-background-color: #b5104a;
+    -fx-background-radius: 0 !important;
+}
+
+.image-view{
+    -fx-background-radius: 5em;
+    -fx-pref-width: 116;
+    -fx-pref-height: 122;
+}

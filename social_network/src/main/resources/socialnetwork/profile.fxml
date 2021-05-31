@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="548.0" prefWidth="963.0" stylesheets="@../style/profile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.ProfileController">
+   <children>
+      <ImageView fx:id="profileImage" fitHeight="220.0" fitWidth="220.0" layoutX="358.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nameLabel" layoutY="268.0" prefHeight="47.0" prefWidth="963.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

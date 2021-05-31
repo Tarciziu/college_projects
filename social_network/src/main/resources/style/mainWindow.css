@@ -1,0 +1,20 @@
+#mainWindowAnchorPane{
+    -fx-background-color: #1e1e1f;
+}
+
+.button{
+    -fx-background-color: #1e1e1f;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 5em;
+}
+
+.button:hover{
+    -fx-background-color: #323236;
+    -fx-text-fill: #b5104a;
+    -fx-background-radius: 5em;
+}
+.button:pressed{
+    -fx-background-color: #2F2B43;
+}
